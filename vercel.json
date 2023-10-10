@@ -3,17 +3,6 @@
     "buildCommand": "npm run build",
     "outputDirectory": "build",
     "installCommand": "npm install",
-    "builds": [
-        {
-            "src": "build/server.js",
-            "use": "@vercel/node",
-            "config": {
-                "includeFiles": [
-                    "build/**"
-                ]
-            }
-        }
-    ],
     "routes": [
         {
             "src": "/(.*)",
