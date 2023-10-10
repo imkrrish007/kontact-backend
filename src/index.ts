@@ -27,7 +27,7 @@ export default class App {
     // security middlewares
     this.app.use(
       cors({
-        origin: ['http://localhost:3000'],
+        origin: ['http://localhost:3000', 'https://kontact-five.vercel.app', '*'],
         credentials: true,
       })
     );
